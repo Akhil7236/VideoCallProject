@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppin', sans-serif;
+}
+
+.header {
+    background: #0e67f7;
+    /* height: 100vh; */
+    width: 100%;
+    position: relative;
+}
+
+nav {
+    position: relative;
+    background: #314058;
+    height: 50px;
+    padding: 10px 0;
+}
+
+.logo {
+
+    position: absolute;
+    bottom: 11px;
+    width: 110px;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0 106px;
+    margin: 0 20px;
+}
+
+ul li {
+    list-style: none;
+}
+
+nav ul li img {
+    width: 30px;
+    margin: 10px 20px;
+    cursor: pointer;
+    display: block;
+    opacity: 0.5;
+    border-radius: 3px;
+}
+
+nav ul li img:hover {
+    opacity: 1;
+    background: #4d6181;
+}
+
+nav span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 45px;
+}
+
+nav span img {
+    width: 30px;
+    margin: 0 10px;
+    padding: 0 5px;
+    cursor: pointer;
+    border: 3px;
+    border-radius: 3px;
+}
+
+nav span img:hover {
+    opacity: 1;
+    background: #4d6181;
+}
+
+.row {
+    margin-top: 15px;
+    padding-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.col-1 {
+    flex-basis: 65%;
+}
+
+.col-2 {
+    flex-basis: 33%;
+}
+
+.host_img {
+    width: 85%;
+    border-radius: 15px;
+}
+
+.control_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 89px;
+}
+
+.control_img img {
+    width: 50px;
+    margin: 5px 12px;
+    cursor: pointer;
+
+
+}
+
+.control_img .call_png {
+    width: 70px;
+}
+
+.control_img img:hover {
+    opacity: 1;
+    background-color: #4d6181;
+    border-radius: 3px;
+    transform: translateY(10px);
+    transition: transform 0.5s;
+}
+
+.joined {
+    /* background: #1d3b6b; */
+    border-radius: 15px;
+    padding: 30px 40px 50px;
+    /* color: #0f3e88 ; */
+    background-color: #1d3b6b;
+
+}
+
+.joined div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+
+.joined p {
+    color: aliceblue;
+}
+
+.joined img {
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.joined img:hover {
+    transform: translateY(10px);
+    transition: transform 0.5s;
+}
+
+.invite {
+    margin-top: 10px;
+    border-radius: 15px;
+    padding: 30px 40px 50px;
+    background-color: #1d3b6b;
+    margin-bottom: 10px;
+}
+
+.invite img {
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.invite p {
+    color: azure;
+}
+
+
+
+.contactContainer {
+    background: #314058;
+}
+
+.contactDetails {
+    text-align: center;
+    margin: 15px 0 15px 0;
+
+    padding: 30px 0 30px 0;
+}
+
+.contactDetails h1 {
+    font-size: 40px;
+    color: #fff;
+}
+
+.contactDetails a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.email,
+.mobileNo,
+.socialMedia {
+    margin: 20px;
+}
+
+.socialMedia img {
+    width: 30px;
+    margin: 10px;
+
+}
+
+.footer {
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .row {
+        display: block;
+    }
+
+    .ulList {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 66px;
+        background: #123267;
+        width: 0%;
+        border-radius: 9px;
+        margin-left: 0px;
+        padding-left: 0px;
+        right: -19px;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 5px;
+    }
+
+    .search {
+        position: absolute;
+        top: 18px;
+        right: 50px;
+    }
+
+    nav span {
+        position: static;
+    }
+
+    .host_img {
+        margin-left: 37px;
+    }
+
+    .control_img {
+        margin-right: 0px;
+    }
+
+    .control_img img {
+        width: 29px;
+        margin: 5px 5px;
+    }
+
+    .control_img .call_png {
+        width: 50px;
+    }
+
+    .joined img {
+        width: 80px;
+    }
+
+
+}
+
+@media only screen and (max-width:460px) {
+    .joined div {
+        display: inline-block;
+    }
+
+    .joined img {
+        width: 60px;
+        margin: 8px;
+    }
+
+}
